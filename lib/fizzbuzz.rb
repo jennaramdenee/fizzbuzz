@@ -1,10 +1,10 @@
-class Fizzbuzz
+class Fixnum
 
-  #actual method that determines fizzbuzz
-  def Fizzbuzz.fizzbuzz
+  def fizzbuzz
     if self.is_a?(Integer) == false
       return "Number must be integer"
     end
+
     if self != 0
       if (self % 3 == 0) && (self % 5 != 0)
         return "fizz"
@@ -12,9 +12,11 @@ class Fizzbuzz
         return "buzz"
       elsif (self % 3 == 0) && (self % 5 == 0)
         return "fizzbuzz"
-      else return self
+      else
+        return self
       end
-    else return self
+    else
+      return self
     end
   end
 
